@@ -14,7 +14,7 @@ echo "--------------- ⏲  Deleting .gz log files ---------------"
 echo ""
 
 # Delete .gz files.
-find /var/log/ -type f -regex ".*\.gz$" -delete -prune -not -empty;
+find /var/log/ -type f -regex ".*\.gz$" -delete 2>/dev/null
 
 echo ""
 echo "--------------- 💯 DONE: logs cleared ---------------"
