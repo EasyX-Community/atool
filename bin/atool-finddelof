@@ -3,7 +3,7 @@
 # DELETE ALL LOGS AND BACKUP LOGS
 
 echo""
-echo "--------------- ⏲  Clearing ALL logs ---------------"
+echo "--------------- ⏲  Finding processes with open deleted files ---------------"
 echo ""
 
 sudo lsof | grep 'deleted'
@@ -17,6 +17,6 @@ PROCSTOKILL=$(sudo lsof | grep 'deleted' | awk 'BEGIN { ORS=" " }; {print $2}')
 echo "${PROCSTOKILL}"
 
 echo ""
-echo "--------------- 💯 DONE: ALL logs cleared ---------------"
+echo "--------------- 💯 DONE ---------------"
 echo ""
 
