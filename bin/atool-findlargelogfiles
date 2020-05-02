@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+# DELETE ALL LOGS AND BACKUP LOGS
+
+echo""
+echo "--------------- ⏲  Finding Large Log Files (${1}) ---------------"
+echo ""
+
+find / -type f -size ${1} -prune -not -empty -exec du -sh {} + 2>/dev/null
+
+echo ""
+echo "--------------- 💯 DONE ---------------"
+echo ""
