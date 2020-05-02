@@ -9,4 +9,4 @@ These scripts are meant to perform common administrative tasks, such as clearing
 
 I will add more scripts later if I can make more useful ones.
 
-**~ Leshacat**
+** ~ Leshacat**
