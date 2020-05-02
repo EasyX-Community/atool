@@ -6,7 +6,7 @@ echo""
 echo "--------------- ⏲  Finding Files (${1}) ---------------"
 echo ""
 
-find / -type f -size ${1} 2>/dev/null
+find / -type f -size ${1} -prune
 
 echo ""
 echo "--------------- 💯 DONE ---------------"
