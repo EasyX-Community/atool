@@ -14,7 +14,7 @@ echo""
 echo "--------------- ⏲  Finding Log Files ---------------"
 echo ""
 
-find / -type f -prune -not -empty ${ATOOL_ADDFSIZE}-name "*.log*" -exec du -sh {} + 2>/dev/null
+find / -type f ${ATOOL_ADDFSIZE}-name "*.log*" -exec du -sh {} + 2>/dev/null
 
 echo ""
 echo "--------------- 💯 DONE ---------------"
