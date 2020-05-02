@@ -5,9 +5,6 @@
 echo""
 echo "--------------- ⏲  Finding Files (${1}) ---------------"
 echo ""
-echo "$1"
-echo ""
-#find / -type f -size ${1} ;
 
 find / -type f -size ${1} -prune -not -empty -exec du -sh {} + 2>/dev/null
 
