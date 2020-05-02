@@ -17,6 +17,13 @@ echo ""
 find /var/log/ -type f -regex ".*\.gz$" -delete 2>/dev/null
 
 echo ""
+echo "--------------- ⏲  Deleting .journal files ---------------"
+echo ""
+
+find / -type f -name "*.journal" -delete + 2>/dev/null ;
+service systemd-journald restart
+
+echo ""
 echo "--------------- 💯 DONE: SYSTEM logs cleared ---------------"
 echo ""
 
