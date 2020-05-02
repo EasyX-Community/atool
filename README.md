@@ -1,4 +1,4 @@
-# atool - Admin Tool Scripts
+# Admin Tool Scripts (atool)
 
 These scripts are meant to perform common administrative tasks, such as clearing log files or upgrading the system.
 
