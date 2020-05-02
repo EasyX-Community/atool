@@ -8,6 +8,7 @@ These scripts are meant to perform common administrative tasks, such as clearing
 
 I will add more scripts later if I can make more useful ones.
 
-~ Leshacat
-http://easyx.cc/
-http://pool.easyx.cc/
+~ LeshaCat<br />
+
+http://easyx.cc/<br />
+http://pool.easyx.cc/<br />
