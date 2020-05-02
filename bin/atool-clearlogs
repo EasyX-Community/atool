@@ -7,14 +7,14 @@ echo "--------------- ⏲  Clearing logs ---------------"
 echo ""
 
 # Clear logs.
-find /var/log/ -type f -prune -not -empty -name "*.log*" -execdir truncate --size=0 {} \ ;
+find /var/log/ -type f -name "*.log*" -execdir truncate --size=0 {} \ -prune -not -empty;
 
 echo ""
 echo "--------------- ⏲  Deleting .gz log files ---------------"
 echo ""
 
 # Delete .gz files.
-find /var/log/ -type f -regex ".*\.gz$" -delete -prune 
+find /var/log/ -type f -regex ".*\.gz$" -delete -prune -not -empty;
 
 echo ""
 echo "--------------- 💯 DONE: logs cleared ---------------"
