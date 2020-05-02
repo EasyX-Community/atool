@@ -1,0 +1,22 @@
+#!/usr/bin/env sh
+
+# DELETE ALL LOGS AND BACKUP LOGS
+
+echo""
+echo "--------------- ⏲  Clearing SYSTEM logs ---------------"
+echo ""
+
+# Clear logs.
+find /var/log/ -type f -name "*.log*" -execdir truncate --size=0 {} + 2>/dev/null ;
+
+echo ""
+echo "--------------- ⏲  Deleting .gz log files ---------------"
+echo ""
+
+# Delete .gz files.
+find /var/log/ -type f -regex ".*\.gz$" -delete 2>/dev/null
+
+echo ""
+echo "--------------- 💯 DONE: SYSTEM logs cleared ---------------"
+echo ""
+
