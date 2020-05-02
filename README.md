@@ -2,6 +2,19 @@
 
 These scripts are meant to perform common administrative tasks, such as clearing log files or upgrading the system.
 
+**./**<br />
+├── bin<br />
+│   ├── atool-clearlargelogs<br />
+│   ├── atool-clearlogs<br />
+│   ├── atool-clearsystemlogs<br />
+│   ├── atool-finddelof<br />
+│   ├── atool-findlargefiles<br />
+│   ├── atool-findlargelogfiles<br />
+│   ├── atool-findlogfiles<br />
+│   └── atool-upgradesystem<br />
+├── install-atool.sh<br />
+└── README.md<br />
+
 **- install-scripts.sh -** Install the scripts<br />
 **- atool-clearlogs -** Truncates all log files (empties log files)<br />
 **- atool-upgradesystem -** Upgrades System - add '-y' at the end to force upgrade<br />
