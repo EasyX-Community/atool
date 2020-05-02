@@ -13,6 +13,12 @@ http://pool.easyx.cc/<br />
 <br />
 ### Files
 --------
+**- install-scripts.sh -** Install the scripts<br />
+**- atool-clearlogs -** Truncates all log files (empties log files)<br />
+**- atool-upgradesystem -** Upgrades System - add '-y' at the end to force upgrade<br />
+**- atool-findlargefiles +100M -** Finds large files over 100M (use - for smaller than)<br />
+**- atool-findlargelogfiles +10M -** Finds large log files over 10M (use - for smaller than)<br />
+<br />
 **./**<br />
 ├── bin<br />
 │   ├── atool-clearlargelogs<br />
@@ -25,12 +31,6 @@ http://pool.easyx.cc/<br />
 │   └── atool-upgradesystem<br />
 ├── install-atool.sh<br />
 └── README.md<br />
-
-**- install-scripts.sh -** Install the scripts<br />
-**- atool-clearlogs -** Truncates all log files (empties log files)<br />
-**- atool-upgradesystem -** Upgrades System - add '-y' at the end to force upgrade<br />
-**- atool-findlargefiles +100M -** Finds large files over 100M (use - for smaller than)<br />
-**- atool-findlargelogfiles +10M -** Finds large log files over 10M (use - for smaller than)<br />
 
 --------
 #### EOF
