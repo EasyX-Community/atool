@@ -15,6 +15,7 @@ http://pool.easyx.cc/<br />
 --------
 **- install-atool.sh -** Install the scripts<br />
 **- atool-clearlogs -** Truncates all log files (empties log files)<br />
+**- atool-clearsystemlogs -** Truncates all system log files, deletes journals (empties log files)<br />
 **- atool-upgradesystem -** Upgrades System - add '-y' at the end to force upgrade<br />
 **- atool-findlargefiles +100M -** Finds large files over 100M (use - for smaller than)<br />
 **- atool-findlargelogfiles +10M -** Finds large log files over 10M (use - for smaller than)<br />
