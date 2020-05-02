@@ -5,6 +5,8 @@ These scripts are meant to perform common administrative tasks, such as clearing
 
 **- install-scripts.sh -** Install and configure the scripts<br />
 **- atool-clearlogs -** Truncates all log files (empties log files)<br />
-**- energi3-upgrade-system -** Upgrades System - add '-y' at the end to force upgrade<br />
+**- atool-upgradesystem -** Upgrades System - add '-y' at the end to force upgrade<br />
 
-**I will add more scripts later if I can make more useful ones.**
+I will add more scripts later if I can make more useful ones.
+
+** ~ Leshacat**
