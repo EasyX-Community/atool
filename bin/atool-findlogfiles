@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# DELETE ALL LOGS AND BACKUP LOGS
+
+ATOOL_FSIZE=${1}
+
+if [[ -n "${ATOOL_FSIZE}" ]] ; then
+  ATOOL_ADDFSIZE="-size ${ATOOL_FSIZE} "
+else
+  ATOOL_ADDFSIZE=""
+fi
+
+echo""
+echo "--------------- ⏲  Finding Log Files ---------------"
+echo ""
+
+find / -type f ${ATOOL_ADDFSIZE}-name "*.log*" -exec du -sh {} \;
+
+echo ""
+echo "--------------- 💯 DONE ---------------"
+echo ""
+
