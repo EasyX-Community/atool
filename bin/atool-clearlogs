@@ -2,16 +2,16 @@
 
 # DELETE ALL LOGS AND BACKUP LOGS
 
-echo "--------------- ⏲  Clearing logs... ---------------"
+echo "--------------- ⏲  Clearing logs ---------------"
 
 # Clear logs.
 find /var/log/ -type f -name "*.log*" -execdir truncate --size=0 {} \;
 
-echo "--------------- ⏲  Deleting .gz log files... ---------------"
+echo "--------------- ⏲  Deleting .gz log files ---------------"
 
 # Delete .gz files.
 find /var/log/ -type f -regex ".*\.gz$" -delete
 
-echo "--------------- 💯 DONE: logs cleared ... ---------------"
+echo "--------------- 💯 DONE: logs cleared ---------------"
 
 
