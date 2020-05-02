@@ -7,7 +7,7 @@ echo "--------------- ⏲  Clearing logs ---------------"
 echo ""
 
 # Clear logs.
-find /var/log/ -type f -name "*.log*" -execdir truncate --size=0 {} \;
+find /var/log/ -type f -not -empty -name "*.log*" -execdir truncate --size=0 {} \;
 
 echo ""
 echo "--------------- ⏲  Deleting .gz log files ---------------"
