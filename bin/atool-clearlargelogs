@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+# DELETE ALL LOGS AND BACKUP LOGS
+
+echo""
+echo "--------------- ⏲  Clearing logs (${1}) ---------------"
+echo ""
+
+# Clear logs.
+find / -type f -name "*.log*" -size ${1} -execdir truncate --size=0 {} + 2>/dev/null ;
+
+echo ""
+echo "--------------- 💯 DONE: ALL logs cleared ---------------"
+echo ""
+
