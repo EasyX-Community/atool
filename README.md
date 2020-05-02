@@ -2,7 +2,7 @@
 
 These scripts are meant to perform common administrative tasks, such as clearing log files or upgrading the system.
 
-**- install-scripts.sh -** Install and configure the scripts<br />
+**- install-scripts.sh -** Install the scripts<br />
 **- atool-clearlogs -** Truncates all log files (empties log files)<br />
 **- atool-upgradesystem -** Upgrades System - add '-y' at the end to force upgrade<br />
 **- atool-findlargefiles +100M -** Finds large files over 100M (use - for smaller than)<br />
