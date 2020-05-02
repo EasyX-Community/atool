@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+# DELETE ALL LOGS AND BACKUP LOGS
+
+echo""
+echo "--------------- ⏲  Upgrading System... ---------------"
+echo ""
+
+apt update
+
+apt upgrade ${1} && apt dist-upgrade ${1}
+
+echo ""
+echo "--------------- 💯 DONE: logs cleared ... ---------------"
+echo ""
+
