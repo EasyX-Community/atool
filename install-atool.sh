@@ -10,7 +10,7 @@ echo "export PATH=\$PATH:${PWD}/bin/" >> ~/.bashrc
 echo "" >> ~/.bashrc
 echo "" >> ~/.bashrc
 
-apt install -y git ntp ntpdate
+apt install -y git ntp ntpdate logrotate
 
 systemctl enable ntp
 systemctl start ntp
