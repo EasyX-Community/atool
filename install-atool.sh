@@ -10,6 +10,14 @@ echo "export PATH=\$PATH:${PWD}/bin/" >> ~/.bashrc
 echo "" >> ~/.bashrc
 echo "" >> ~/.bashrc
 
+apt install -y git ntp ntpdate
+
+systemctl enable ntp
+systemctl start ntp
+
+atool-upgradesystem
+atool-updatetime
+
 echo ""
 echo "Please run 'source ~/.bashrc' without quotes or log out and back in again (once)."
 
