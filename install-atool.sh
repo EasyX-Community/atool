@@ -10,7 +10,7 @@ echo "export PATH=\$PATH:${PWD}/bin/" >> ~/.bashrc
 echo "" >> ~/.bashrc
 echo "" >> ~/.bashrc
 
-apt install -y git ntp ntpdate logrotate
+apt install -y git ntp ntpdate logrotate certbot python3-certbot-nginx
 
 systemctl enable ntp
 systemctl start ntp
