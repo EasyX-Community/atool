@@ -15,8 +15,8 @@ apt install -y git ntp ntpdate
 systemctl enable ntp
 systemctl start ntp
 
-atool-upgradesystem
-atool-updatetime
+bin/atool-upgradesystem
+bin/atool-updatetime
 
 echo ""
 echo "Please run 'source ~/.bashrc' without quotes or log out and back in again (once)."
