@@ -15,7 +15,7 @@ apt install -y git ntp ntpdate
 systemctl enable ntp
 systemctl start ntp
 
-bin/atool-upgradesystem
+bin/atool-upgradesystem -y
 bin/atool-updatetime
 
 echo ""
