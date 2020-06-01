@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+echo""
+echo "--------------- ⏲  Updating Date/Time ---------------"
+echo ""
+
+sudo service ntp stop
+sudo ntpd -gq
+sudo service ntp start
+
+echo ""
+echo "--------------- 💯 DONE: Updated Date/Time ---------------"
+echo ""
