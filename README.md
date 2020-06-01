@@ -17,6 +17,7 @@ http://pool.easyx.cc/<br />
 **- atool-clearlogs -** Truncates all log files (empties log files)<br />
 **- atool-clearsystemlogs -** Truncates all system log files, deletes journals (empties log files)<br />
 **- atool-upgradesystem -** Upgrades System - add '-y' at the end to force upgrade<br />
+**- atool-updatetime -** Updates Date/Time<br />
 **- atool-findlargefiles +100M -** Finds large files over 100M (use - for smaller than)<br />
 **- atool-findlargelogfiles +10M -** Finds large log files over 10M (use - for smaller than)<br />
 <br />
@@ -29,6 +30,7 @@ http://pool.easyx.cc/<br />
 │   ├── atool-findlargefiles<br />
 │   ├── atool-findlargelogfiles<br />
 │   ├── atool-findlogfiles<br />
+│   └── atool-updatetime<br />
 │   └── atool-upgradesystem<br />
 ├── install-atool.sh<br />
 └── README.md<br />
