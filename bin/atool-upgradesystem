@@ -11,6 +11,6 @@ apt update
 apt upgrade ${1} && apt dist-upgrade ${1}
 
 echo ""
-echo "--------------- 💯 DONE: logs cleared ---------------"
+echo "--------------- 💯 DONE: Upgrading System ---------------"
 echo ""
 
