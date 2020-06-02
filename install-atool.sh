@@ -3,12 +3,16 @@
 
 export PATH=${PATH}:${PWD}/
 
-echo "" >> ~/.bashrc
-echo "" >> ~/.bashrc
-echo "# LINE BELOW PUT HERE BY ATOOL HELPER SCRIPTS" >> ~/.bashrc
-echo "export PATH=\$PATH:${PWD}/bin/" >> ~/.bashrc
-echo "" >> ~/.bashrc
-echo "" >> ~/.bashrc
+TEST=$(grep "export PATH=\$PATH:/root/atool/bin/" /root/.bashrc)
+
+if [ "$TEST" != "export PATH=\$PATH:/root/atool/bin/" ]; then
+  echo "" >> ~/.bashrc
+  echo "" >> ~/.bashrc
+  echo "# LINE BELOW PUT HERE BY ATOOL HELPER SCRIPTS" >> ~/.bashrc
+  echo "export PATH=\$PATH:${PWD}/bin/" >> ~/.bashrc
+  echo "" >> ~/.bashrc
+  echo "" >> ~/.bashrc
+fi
 
 apt install -y git ntp ntpdate logrotate certbot python3-certbot-nginx
 
