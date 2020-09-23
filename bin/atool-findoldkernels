@@ -3,7 +3,7 @@
 # DELETE ALL LOGS AND BACKUP LOGS
 
 echo""
-echo "--------------- ⏲  Finding Old Kernels (${1}) ---------------"
+echo "--------------- ⏲  Finding Old Kernels ---------------"
 echo ""
 
 sudo dpkg --list 'linux-image*'|awk '{ if ($1=="ii") print $2}'|grep -v `uname -r`
