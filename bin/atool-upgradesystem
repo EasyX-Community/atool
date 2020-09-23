@@ -8,7 +8,7 @@ echo ""
 
 apt update
 
-apt upgrade ${1} && apt dist-upgrade ${1}
+apt upgrade -y && apt dist-upgrade -y
 
 echo ""
 echo "--------------- 💯 DONE: Upgrading System ---------------"
