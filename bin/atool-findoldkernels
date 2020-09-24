@@ -6,7 +6,11 @@ echo""
 echo "--------------- ⏲  Finding Old Kernels ---------------"
 echo ""
 
-sudo dpkg --list 'linux-image*'|awk '{ if ($1=="ii") print $2}'|grep -v `uname -r`
+sudo dpkg --list 'linux-image*'|awk '{ if ($1=="ii") print $2}'|grep -v uname -r | while read -r line; do sudo apt-get -y purge $line;done;
+
+sudo apt-get autoremove;
+
+sudo update-grub
 
 echo ""
 echo "--------------- 💯 DONE ---------------"
