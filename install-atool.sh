@@ -19,6 +19,8 @@ apt install -y git ntp ntpdate logrotate certbot python3-certbot-nginx
 systemctl enable ntp
 systemctl start ntp
 
+chmod +x bin/*
+
 bin/atool-upgradesystem -y
 bin/atool-updatetime
 
