@@ -3,6 +3,7 @@
 
 export PATH=${PATH}:${PWD}/
 
+# TEST TO SEE IF WE ALREADY INSTALLED TO BASHRC
 TEST=$(grep "export PATH=\$PATH:/root/atool/bin/" /root/.bashrc)
 
 if [ "$TEST" != "export PATH=\$PATH:/root/atool/bin/" ]; then
