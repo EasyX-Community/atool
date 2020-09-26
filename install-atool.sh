@@ -24,6 +24,8 @@ chmod +x bin/*
 
 bin/atool-upgradesystem -y
 
+bin/atool-clearkernels
+
 bin/atool-updatetime
 
 echo ""
