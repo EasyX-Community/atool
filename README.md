@@ -26,7 +26,7 @@ http://pool.easyx.cc/<br />
 │   ├── atool-clearlargelogs<br />
 │   ├── atool-clearlogs<br />
 │   ├── atool-clearsystemlogs<br />
-│   ├── atool-finddelof<br />
+│   ├── atool-findopendeletefiles<br />
 │   ├── atool-findlargefiles<br />
 │   ├── atool-findlargelogfiles<br />
 │   ├── atool-findlogfiles<br />
