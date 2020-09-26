@@ -14,7 +14,7 @@ echo ""
 
 PROCSTOKILL=$(sudo lsof | grep 'deleted' | awk 'BEGIN { ORS=" " }; {print $2}')
 
-echo "${PROCSTOKILL}"
+#echo "${PROCSTOKILL}"
 
 echo ""
 echo "--------------- 💯 DONE ---------------"
