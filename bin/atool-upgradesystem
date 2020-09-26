@@ -10,9 +10,13 @@ apt update
 
 apt upgrade -y && apt dist-upgrade -y
 
-apt --purge autoremove
+apt-get autoremove
+
+purge-old-kernels
 
 apt clean
+
+update-grub
 
 echo ""
 echo "--------------- 💯 DONE: Upgrading System ---------------"
