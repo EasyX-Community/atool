@@ -10,6 +10,10 @@ apt update
 
 apt upgrade -y && apt dist-upgrade -y
 
+apt --purge autoremove
+
+apt clean
+
 echo ""
 echo "--------------- 💯 DONE: Upgrading System ---------------"
 echo ""
