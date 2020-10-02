@@ -17,6 +17,8 @@ fi
 
 apt install -y git ntp ntpdate logrotate certbot python3-certbot-nginx byobu
 
+chmod +x /usr/sbin/ntpd
+
 systemctl enable ntp
 systemctl start ntp
 
