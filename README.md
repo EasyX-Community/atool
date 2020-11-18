@@ -2,9 +2,9 @@
 
 ### Notes
 --------
-These scripts are meant to perform common administrative tasks, such as clearing log files or upgrading the system.
+These scripts are meant to perform common administrative tasks, such as clearing log files or upgrading the system and updating the time with ntpd.
 
-I will add more scripts later if I can make more useful ones.
+I am not intending on focusing work on these scripts, they heavily utilize other programs with one liners in many cases that solve problems I've run into playing around with computers and servers in my spare time. I've essentially abandoned the project but if I run accross something in my personal home use I may add something in. However it is not likely, I use it mostly as is now. Fork and take over if you like to see new features.
 
 ~ LeshaCat<br />
 
