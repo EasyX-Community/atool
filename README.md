@@ -2,4 +2,4 @@
 
 ### Notes
 --------
-Repository moved to http://gogs.easyx.cc/kthx/atool.git
+Repository moved to https://gogs.easyx.cc/kthx/atool.git
