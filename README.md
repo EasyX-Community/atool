@@ -2,4 +2,4 @@
 
 ### Notes
 --------
-Repository moved to https://gogs.easyx.cc/mooleshacat/atool.git
+Repository moved to https://gogs.easyx.cc/EasyX-Community/atool.git
